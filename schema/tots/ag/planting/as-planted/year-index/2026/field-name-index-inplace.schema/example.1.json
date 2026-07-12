@@ -1,0 +1,111 @@
+{
+  "data": {
+    "summary": {
+      "grower_id": "GROWER-001",
+      "farm_id": "FARM-HOME",
+      "field_id": "NORTH-80",
+      "crop_year": 2025,
+      "planting_date": "2025-04-28"
+    },
+    "population_points": [
+      {
+        "timestamp": "2025-04-28T14:05:00Z",
+        "latitude": 41.1048,
+        "longitude": -93.0961,
+        "hybrid": "P1185AM",
+        "target_population_seeds_ac": 34000,
+        "actual_population_seeds_ac": 33850,
+        "singulation_pct": 98.7,
+        "row_spacing_in": 30,
+        "section_id": "SEC-01"
+      },
+      {
+        "timestamp": "2025-04-28T14:05:30Z",
+        "latitude": 41.1048,
+        "longitude": -93.0957,
+        "hybrid": "P1185AM",
+        "target_population_seeds_ac": 34000,
+        "actual_population_seeds_ac": 34120,
+        "singulation_pct": 98.9,
+        "row_spacing_in": 30,
+        "section_id": "SEC-02"
+      }
+    ]
+  },
+  "meta": {
+    "population_points": {
+      "units": {
+        "target_population_seeds_ac": "seeds/ac",
+        "actual_population_seeds_ac": "seeds/ac",
+        "singulation_pct": "%",
+        "row_spacing_in": "in"
+      }
+    }
+  },
+  "tots": {
+    "version": "tots/v1",
+    "leafPath": "ag/planting/as-planted/year-index/2026/field-name-index-inplace.schema",
+    "pathContext": {
+      "year-index": "2026",
+      "field-name-index": "north80"
+    },
+    "encoding": {
+      "input": "xlsx",
+      "canonical": [
+        "xlsx",
+        "csv",
+        "csvf",
+        "csvf.zip"
+      ]
+    },
+    "sheets": {
+      "order": [
+        "Planting Map"
+      ]
+    },
+    "sections": {
+      "summary": {
+        "kind": "object",
+        "sheet": "Planting Map",
+        "order": 1,
+        "required": true,
+        "locateMode": "sentinel-row",
+        "startPattern": "PLANTING SUMMARY"
+      },
+      "population_points": {
+        "kind": "table",
+        "sheet": "Planting Map",
+        "order": 2,
+        "required": true,
+        "locateMode": "sentinel-row",
+        "startPattern": "POPULATION POINTS",
+        "rowTypeColumn": "_row_type",
+        "rowTypeSet": "standard"
+      }
+    },
+    "input": {
+      "totsPath": "ag/planting/as-planted/year-index/2026/north80.xlsx",
+      "schemaLeafPath": "ag/planting/as-planted/year-index/2026/field-name-index-inplace.schema",
+      "totsPathSource": "explicit"
+    },
+    "schema": {
+      "id": "builtin",
+      "sourceType": "builtin",
+      "leafPath": "ag/planting/as-planted/year-index/2026/field-name-index-inplace.schema",
+      "mountedLeafPath": "ag/planting/as-planted/year-index/2026/field-name-index-inplace.schema"
+    },
+    "sources": {
+      "rootDiscovery": {
+        "method": "marker",
+        "marker": ".tots-manifest.json"
+      },
+      "schema": {
+        "id": "builtin",
+        "sourceType": "builtin",
+        "leafPath": "ag/planting/as-planted/year-index/2026/field-name-index-inplace.schema",
+        "mountedLeafPath": "ag/planting/as-planted/year-index/2026/field-name-index-inplace.schema"
+      }
+    },
+    "diagnostics": []
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://treeoftables.org/fixtures/ag/inventory/pesticide/year-index/2026.schema/schema.data.json",
+  "title": "pesticide_inventory data schema",
+  "type": "object",
+  "properties": {
+    "products": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "product_id": {
+            "type": "string"
+          },
+          "product_name": {
+            "type": "string"
+          },
+          "active_ingredient": {
+            "type": "string"
+          },
+          "epa_registration_number": {
+            "type": "string"
+          },
+          "lot_number": {
+            "type": "string"
+          },
+          "expiration_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "package_size": {
+            "type": "number"
+          },
+          "unit": {
+            "type": "string"
+          },
+          "quantity_on_hand": {
+            "type": "number"
+          },
+          "storage_location": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "product_id",
+          "product_name",
+          "active_ingredient",
+          "epa_registration_number",
+          "lot_number",
+          "expiration_date",
+          "package_size",
+          "unit",
+          "quantity_on_hand",
+          "storage_location"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "products"
+  ],
+  "additionalProperties": false
+}

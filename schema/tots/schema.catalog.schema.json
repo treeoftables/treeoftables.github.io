@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://treeoftables.org/schemas/schema.catalog.schema.json",
+  "title": "TOTS schema catalog",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "sourceType": {
+            "type": "string",
+            "enum": [
+              "local",
+              "url",
+              "git",
+              "npm",
+              "bundle",
+              "manifest"
+            ]
+          },
+          "description": {
+            "type": "string"
+          },
+          "enabled": {
+            "type": "boolean"
+          },
+          "namespace": {
+            "type": "string"
+          },
+          "mountPath": {
+            "type": "string"
+          },
+          "schemaRoot": {
+            "type": "string"
+          },
+          "rootManifest": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "manifest": {
+            "type": "string"
+          },
+          "git": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "package": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "bundle": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "integrity": {
+            "type": "string"
+          },
+          "priority": {
+            "type": "integer"
+          },
+          "override": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "id",
+          "sourceType"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "version",
+    "sources"
+  ],
+  "additionalProperties": false
+}

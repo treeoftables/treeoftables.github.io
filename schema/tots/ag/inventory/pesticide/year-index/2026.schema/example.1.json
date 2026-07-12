@@ -1,0 +1,73 @@
+{
+  "data": {
+    "products": [
+      {
+        "product_id": "HERB-01",
+        "product_name": "Acuron",
+        "active_ingredient": "atrazine+bicyclopyrone+mesotrione+S-metolachlor",
+        "epa_registration_number": "100-1466",
+        "lot_number": "ACU25A",
+        "expiration_date": "2027-12-31",
+        "package_size": 2.5,
+        "unit": "gal",
+        "quantity_on_hand": 12,
+        "storage_location": "Chemical shed"
+      }
+    ]
+  },
+  "meta": {},
+  "tots": {
+    "version": "tots/v1",
+    "leafPath": "ag/inventory/pesticide/year-index/2026.schema",
+    "pathContext": {
+      "year-index": "2026"
+    },
+    "encoding": {
+      "input": "xlsx",
+      "canonical": [
+        "xlsx",
+        "csv",
+        "csvf",
+        "csvf.zip"
+      ]
+    },
+    "sheets": {
+      "order": [
+        "Pesticides"
+      ]
+    },
+    "sections": {
+      "products": {
+        "kind": "table",
+        "sheet": "Pesticides",
+        "order": 1,
+        "required": true,
+        "locateMode": "ordered-default"
+      }
+    },
+    "input": {
+      "totsPath": "ag/inventory/pesticide/year-index/2026.xlsx",
+      "schemaLeafPath": "ag/inventory/pesticide/year-index/2026.schema",
+      "totsPathSource": "explicit"
+    },
+    "schema": {
+      "id": "builtin",
+      "sourceType": "builtin",
+      "leafPath": "ag/inventory/pesticide/year-index/2026.schema",
+      "mountedLeafPath": "ag/inventory/pesticide/year-index/2026.schema"
+    },
+    "sources": {
+      "rootDiscovery": {
+        "method": "marker",
+        "marker": ".tots-manifest.json"
+      },
+      "schema": {
+        "id": "builtin",
+        "sourceType": "builtin",
+        "leafPath": "ag/inventory/pesticide/year-index/2026.schema",
+        "mountedLeafPath": "ag/inventory/pesticide/year-index/2026.schema"
+      }
+    },
+    "diagnostics": []
+  }
+}

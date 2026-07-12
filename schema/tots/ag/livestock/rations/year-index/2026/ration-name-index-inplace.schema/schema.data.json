@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://treeoftables.org/fixtures/ag/livestock/rations/year-index/2026/ration-name-index-inplace.schema/schema.data.json",
+  "title": "livestock_feed_ration data schema",
+  "type": "object",
+  "properties": {
+    "ration": {
+      "type": "object",
+      "properties": {
+        "ration_name": {
+          "type": "string"
+        },
+        "species": {
+          "type": "string"
+        },
+        "class": {
+          "type": "string"
+        },
+        "effective_date": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "required": [
+        "ration_name",
+        "species",
+        "class",
+        "effective_date"
+      ],
+      "additionalProperties": false
+    },
+    "ingredients": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ingredient": {
+            "type": "string"
+          },
+          "dry_matter_pct": {
+            "type": "number"
+          },
+          "as_fed_lbs_per_head": {
+            "type": "number"
+          },
+          "dm_lbs_per_head": {
+            "type": "number"
+          },
+          "crude_protein_pct": {
+            "type": "number"
+          },
+          "net_energy_mcal_lb": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "ingredient",
+          "dry_matter_pct",
+          "as_fed_lbs_per_head",
+          "dm_lbs_per_head",
+          "crude_protein_pct",
+          "net_energy_mcal_lb"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "ration",
+    "ingredients"
+  ],
+  "additionalProperties": false
+}

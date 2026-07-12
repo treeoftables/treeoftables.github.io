@@ -1,0 +1,97 @@
+{
+  "data": {
+    "sample": {
+      "lab_name": "Midwest Soil Lab",
+      "sample_date": "2025-03-20",
+      "field_id": "NORTH-80",
+      "crop_year": 2025
+    },
+    "results": [
+      {
+        "sample_id": "N80-A",
+        "depth_in": "0-6",
+        "ph": 6.4,
+        "organic_matter_pct": 3.8,
+        "cec_meq_100g": 18.2,
+        "phosphorus_ppm": 24,
+        "potassium_ppm": 168,
+        "recommendation": "Maintain P and K; monitor pH"
+      },
+      {
+        "sample_id": "N80-B",
+        "depth_in": "0-6",
+        "ph": 6.1,
+        "organic_matter_pct": 3.4,
+        "cec_meq_100g": 17.5,
+        "phosphorus_ppm": 18,
+        "potassium_ppm": 142,
+        "recommendation": "Consider lime and build K"
+      }
+    ]
+  },
+  "meta": {},
+  "tots": {
+    "version": "tots/v1",
+    "leafPath": "ag/soil_tests/year-index/2026/field-name-index-inplace.schema",
+    "pathContext": {
+      "year-index": "2026",
+      "field-name-index": "north80"
+    },
+    "encoding": {
+      "input": "xlsx",
+      "canonical": [
+        "xlsx",
+        "csv",
+        "csvf",
+        "csvf.zip"
+      ]
+    },
+    "sheets": {
+      "order": [
+        "Soil Test"
+      ]
+    },
+    "sections": {
+      "sample": {
+        "kind": "object",
+        "sheet": "Soil Test",
+        "order": 1,
+        "required": true,
+        "locateMode": "sentinel-row",
+        "startPattern": "SAMPLE"
+      },
+      "results": {
+        "kind": "table",
+        "sheet": "Soil Test",
+        "order": 2,
+        "required": true,
+        "locateMode": "sentinel-row",
+        "startPattern": "RESULTS"
+      }
+    },
+    "input": {
+      "totsPath": "ag/soil_tests/year-index/2026/north80.xlsx",
+      "schemaLeafPath": "ag/soil_tests/year-index/2026/field-name-index-inplace.schema",
+      "totsPathSource": "explicit"
+    },
+    "schema": {
+      "id": "builtin",
+      "sourceType": "builtin",
+      "leafPath": "ag/soil_tests/year-index/2026/field-name-index-inplace.schema",
+      "mountedLeafPath": "ag/soil_tests/year-index/2026/field-name-index-inplace.schema"
+    },
+    "sources": {
+      "rootDiscovery": {
+        "method": "marker",
+        "marker": ".tots-manifest.json"
+      },
+      "schema": {
+        "id": "builtin",
+        "sourceType": "builtin",
+        "leafPath": "ag/soil_tests/year-index/2026/field-name-index-inplace.schema",
+        "mountedLeafPath": "ag/soil_tests/year-index/2026/field-name-index-inplace.schema"
+      }
+    },
+    "diagnostics": []
+  }
+}

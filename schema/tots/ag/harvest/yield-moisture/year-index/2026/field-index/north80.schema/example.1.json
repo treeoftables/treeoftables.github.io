@@ -1,0 +1,110 @@
+{
+  "data": {
+    "summary": {
+      "grower_id": "GROWER-001",
+      "farm_id": "FARM-HOME",
+      "field_id": "NORTH-80",
+      "crop_year": 2025,
+      "crop": "corn",
+      "hybrid": "Pioneer P1185AM"
+    },
+    "yield_points": [
+      {
+        "timestamp": "2025-10-14T18:00:00Z",
+        "latitude": 41.1051,
+        "longitude": -93.0962,
+        "yield_bu_ac": 214.2,
+        "moisture_pct": 18.4,
+        "speed_mph": 4.8,
+        "heading_deg": 90,
+        "pass_id": "P-001"
+      },
+      {
+        "timestamp": "2025-10-14T18:00:10Z",
+        "latitude": 41.1051,
+        "longitude": -93.0958,
+        "yield_bu_ac": 221.7,
+        "moisture_pct": 18.1,
+        "speed_mph": 4.9,
+        "heading_deg": 90,
+        "pass_id": "P-001"
+      }
+    ]
+  },
+  "meta": {
+    "yield_points": {
+      "units": {
+        "yield_bu_ac": "bu/ac",
+        "moisture_pct": "%",
+        "speed_mph": "mph",
+        "heading_deg": "deg"
+      }
+    }
+  },
+  "tots": {
+    "version": "tots/v1",
+    "leafPath": "ag/harvest/yield-moisture/year-index/2026/field-index/north80.schema",
+    "pathContext": {
+      "year-index": "2026",
+      "field-index": "north80"
+    },
+    "encoding": {
+      "input": "xlsx",
+      "canonical": [
+        "xlsx",
+        "csv",
+        "csvf",
+        "csvf.zip"
+      ]
+    },
+    "sheets": {
+      "order": [
+        "Harvest Map"
+      ]
+    },
+    "sections": {
+      "summary": {
+        "kind": "object",
+        "sheet": "Harvest Map",
+        "order": 1,
+        "required": true,
+        "locateMode": "sentinel-row",
+        "startPattern": "HARVEST SUMMARY"
+      },
+      "yield_points": {
+        "kind": "table",
+        "sheet": "Harvest Map",
+        "order": 2,
+        "required": true,
+        "locateMode": "sentinel-row",
+        "startPattern": "YIELD POINTS",
+        "rowTypeColumn": "_row_type",
+        "rowTypeSet": "standard"
+      }
+    },
+    "input": {
+      "totsPath": "ag/harvest/yield-moisture/year-index/2026/field-index/north80.xlsx",
+      "schemaLeafPath": "ag/harvest/yield-moisture/year-index/2026/field-index/north80.schema",
+      "totsPathSource": "explicit"
+    },
+    "schema": {
+      "id": "builtin",
+      "sourceType": "builtin",
+      "leafPath": "ag/harvest/yield-moisture/year-index/2026/field-index/north80.schema",
+      "mountedLeafPath": "ag/harvest/yield-moisture/year-index/2026/field-index/north80.schema"
+    },
+    "sources": {
+      "rootDiscovery": {
+        "method": "marker",
+        "marker": ".tots-manifest.json"
+      },
+      "schema": {
+        "id": "builtin",
+        "sourceType": "builtin",
+        "leafPath": "ag/harvest/yield-moisture/year-index/2026/field-index/north80.schema",
+        "mountedLeafPath": "ag/harvest/yield-moisture/year-index/2026/field-index/north80.schema"
+      }
+    },
+    "diagnostics": []
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://treeoftables.org/fixtures/ag/inventory/grain/year-index/2026.schema/schema.data.json",
+  "title": "grain_storage_inventory data schema",
+  "type": "object",
+  "properties": {
+    "bin": {
+      "type": "object",
+      "properties": {
+        "bin_id": {
+          "type": "string"
+        },
+        "capacity_bu": {
+          "type": "integer"
+        },
+        "fan_type": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "bin_id",
+        "capacity_bu",
+        "fan_type"
+      ],
+      "additionalProperties": false
+    },
+    "snapshots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "snapshot_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "commodity": {
+            "type": "string"
+          },
+          "bushels": {
+            "type": "number"
+          },
+          "moisture_pct": {
+            "type": "number"
+          },
+          "test_weight_lb_bu": {
+            "type": "number"
+          },
+          "avg_temp_f": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "snapshot_date",
+          "commodity",
+          "bushels",
+          "moisture_pct",
+          "test_weight_lb_bu",
+          "avg_temp_f"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "bin",
+    "snapshots"
+  ],
+  "additionalProperties": false
+}

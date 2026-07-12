@@ -1,0 +1,288 @@
+{
+  "version": "milestone1/v1",
+  "generatedBy": "schema/scripts/generate-milestone1-fixtures.cjs",
+  "globalSchemas": {
+    "meta": "schema.meta.json",
+    "tots": "schema.tots.json"
+  },
+  "fixtures": [
+    {
+      "name": "field_boundaries",
+      "description": "Farmer-readable field boundary workbook with optional grower and farm lookup sheets.",
+      "leafPath": "ag/fields/field_boundaries.schema",
+      "schemaWorkbook": "ag/fields/field_boundaries.schema/schema.xlsx",
+      "dataSchema": "ag/fields/field_boundaries.schema/schema.data.json",
+      "examples": [
+        {
+          "workbook": "ag/fields/field_boundaries.schema/example.1.xlsx",
+          "expectedJson": "ag/fields/field_boundaries.schema/example.1.json",
+          "totsPath": "ag/fields/field_boundaries.xlsx",
+          "attachments": []
+        },
+        {
+          "workbook": "ag/fields/field_boundaries.schema/example.2.xlsx",
+          "expectedJson": "ag/fields/field_boundaries.schema/example.2.json",
+          "totsPath": "ag/fields/field_boundaries.xlsx",
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "name": "harvest_yield_moisture_map",
+      "description": "Yield monitor points with moisture for one field.",
+      "leafPath": "ag/harvest/yield-moisture/year-index/2026/field-index/north80.schema",
+      "schemaWorkbook": "ag/harvest/yield-moisture/year-index/2026/field-index/north80.schema/schema.xlsx",
+      "dataSchema": "ag/harvest/yield-moisture/year-index/2026/field-index/north80.schema/schema.data.json",
+      "examples": [
+        {
+          "workbook": "ag/harvest/yield-moisture/year-index/2026/field-index/north80.schema/example.1.xlsx",
+          "expectedJson": "ag/harvest/yield-moisture/year-index/2026/field-index/north80.schema/example.1.json",
+          "totsPath": "ag/harvest/yield-moisture/year-index/2026/field-index/north80.xlsx",
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "name": "planting_population_map",
+      "description": "Planting population observations for one field.",
+      "leafPath": "ag/planting/as-planted/year-index/2026/field-name-index-inplace.schema",
+      "schemaWorkbook": "ag/planting/as-planted/year-index/2026/field-name-index-inplace.schema/schema.xlsx",
+      "dataSchema": "ag/planting/as-planted/year-index/2026/field-name-index-inplace.schema/schema.data.json",
+      "examples": [
+        {
+          "workbook": "ag/planting/as-planted/year-index/2026/field-name-index-inplace.schema/example.1.xlsx",
+          "expectedJson": "ag/planting/as-planted/year-index/2026/field-name-index-inplace.schema/example.1.json",
+          "totsPath": "ag/planting/as-planted/year-index/2026/north80.xlsx",
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "name": "weather_station_data_log",
+      "description": "Weather station data log with 15-minute readings.",
+      "leafPath": "ag/weather/station-index/home/year-index/2026.schema",
+      "schemaWorkbook": "ag/weather/station-index/home/year-index/2026.schema/schema.xlsx",
+      "dataSchema": "ag/weather/station-index/home/year-index/2026.schema/schema.data.json",
+      "examples": [
+        {
+          "workbook": "ag/weather/station-index/home/year-index/2026.schema/example.1.xlsx",
+          "expectedJson": "ag/weather/station-index/home/year-index/2026.schema/example.1.json",
+          "totsPath": "ag/weather/station-index/home/year-index/2026.xlsx",
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "name": "crop_scouting_report",
+      "description": "Generic crop scouting report with corn-specific July Midwest content.",
+      "leafPath": "ag/crop-scouting/year-index/2026/field-index/north80.schema",
+      "schemaWorkbook": "ag/crop-scouting/year-index/2026/field-index/north80.schema/schema.xlsx",
+      "dataSchema": "ag/crop-scouting/year-index/2026/field-index/north80.schema/schema.data.json",
+      "examples": [
+        {
+          "workbook": "ag/crop-scouting/year-index/2026/field-index/north80.schema/example.1.xlsx",
+          "expectedJson": "ag/crop-scouting/year-index/2026/field-index/north80.schema/example.1.json",
+          "totsPath": "ag/crop-scouting/year-index/2026/field-index/north80.xlsx",
+          "attachments": [
+            {
+              "path": "ag/crop-scouting/year-index/2026/field-index/north80.schema/attachments/gray-leaf-spot-lower-canopy.png",
+              "relativePath": "attachments/gray-leaf-spot-lower-canopy.png",
+              "mediaType": "image/png",
+              "description": "Lower canopy gray leaf spot scouting photo"
+            },
+            {
+              "path": "ag/crop-scouting/year-index/2026/field-index/north80.schema/attachments/gray-leaf-spot-closeup.png",
+              "relativePath": "attachments/gray-leaf-spot-closeup.png",
+              "mediaType": "image/png",
+              "description": "Close-up gray leaf spot scouting photo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "field_ndvi_drone_imagery",
+      "description": "Aerial NDVI drone imagery for a corn field during the growing season.",
+      "leafPath": "ag/aerial-imagery/year-index/2026/field-index/north80/ndvi.schema",
+      "schemaWorkbook": "ag/aerial-imagery/year-index/2026/field-index/north80/ndvi.schema/schema.xlsx",
+      "dataSchema": "ag/aerial-imagery/year-index/2026/field-index/north80/ndvi.schema/schema.data.json",
+      "examples": [
+        {
+          "workbook": "ag/aerial-imagery/year-index/2026/field-index/north80/ndvi.schema/example.1.xlsx",
+          "expectedJson": "ag/aerial-imagery/year-index/2026/field-index/north80/ndvi.schema/example.1.json",
+          "totsPath": "ag/aerial-imagery/year-index/2026/field-index/north80/ndvi.xlsx",
+          "attachments": [
+            {
+              "path": "ag/aerial-imagery/year-index/2026/field-index/north80/ndvi.schema/attachments/ndvi-2025-06-10-v6.png",
+              "relativePath": "attachments/ndvi-2025-06-10-v6.png",
+              "mediaType": "image/png",
+              "description": "Aerial NDVI image at V6"
+            },
+            {
+              "path": "ag/aerial-imagery/year-index/2026/field-index/north80/ndvi.schema/attachments/ndvi-2025-07-03-v10.png",
+              "relativePath": "attachments/ndvi-2025-07-03-v10.png",
+              "mediaType": "image/png",
+              "description": "Aerial NDVI image at V10"
+            },
+            {
+              "path": "ag/aerial-imagery/year-index/2026/field-index/north80/ndvi.schema/attachments/ndvi-2025-08-01-r3.png",
+              "relativePath": "attachments/ndvi-2025-08-01-r3.png",
+              "mediaType": "image/png",
+              "description": "Aerial NDVI image at R3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "soil_test_result",
+      "description": "Soil sample metadata and lab nutrient results.",
+      "leafPath": "ag/soil_tests/year-index/2026/field-name-index-inplace.schema",
+      "schemaWorkbook": "ag/soil_tests/year-index/2026/field-name-index-inplace.schema/schema.xlsx",
+      "dataSchema": "ag/soil_tests/year-index/2026/field-name-index-inplace.schema/schema.data.json",
+      "examples": [
+        {
+          "workbook": "ag/soil_tests/year-index/2026/field-name-index-inplace.schema/example.1.xlsx",
+          "expectedJson": "ag/soil_tests/year-index/2026/field-name-index-inplace.schema/example.1.json",
+          "totsPath": "ag/soil_tests/year-index/2026/north80.xlsx",
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "name": "machinery_inventory_filters",
+      "description": "Machinery inventory with serial numbers and filter part numbers.",
+      "leafPath": "ag/equipment/parts/filters/year-index/2026.schema",
+      "schemaWorkbook": "ag/equipment/parts/filters/year-index/2026.schema/schema.xlsx",
+      "dataSchema": "ag/equipment/parts/filters/year-index/2026.schema/schema.data.json",
+      "examples": [
+        {
+          "workbook": "ag/equipment/parts/filters/year-index/2026.schema/example.1.xlsx",
+          "expectedJson": "ag/equipment/parts/filters/year-index/2026.schema/example.1.json",
+          "totsPath": "ag/equipment/parts/filters/year-index/2026.xlsx",
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "name": "spray_application_record",
+      "description": "Regulatory-style spray application record.",
+      "leafPath": "ag/spray/application-records/year-index/2026/field-name-index-inplace.schema",
+      "schemaWorkbook": "ag/spray/application-records/year-index/2026/field-name-index-inplace.schema/schema.xlsx",
+      "dataSchema": "ag/spray/application-records/year-index/2026/field-name-index-inplace.schema/schema.data.json",
+      "examples": [
+        {
+          "workbook": "ag/spray/application-records/year-index/2026/field-name-index-inplace.schema/example.1.xlsx",
+          "expectedJson": "ag/spray/application-records/year-index/2026/field-name-index-inplace.schema/example.1.json",
+          "totsPath": "ag/spray/application-records/year-index/2026/north80.xlsx",
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "name": "fertilizer_manure_application_record",
+      "description": "Fertilizer and manure application record.",
+      "leafPath": "ag/manure/application-records/year-index/2026.schema",
+      "schemaWorkbook": "ag/manure/application-records/year-index/2026.schema/schema.xlsx",
+      "dataSchema": "ag/manure/application-records/year-index/2026.schema/schema.data.json",
+      "examples": [
+        {
+          "workbook": "ag/manure/application-records/year-index/2026.schema/example.1.xlsx",
+          "expectedJson": "ag/manure/application-records/year-index/2026.schema/example.1.json",
+          "totsPath": "ag/manure/application-records/year-index/2026.xlsx",
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "name": "irrigation_log",
+      "description": "Irrigation event log.",
+      "leafPath": "ag/irrigation/application-records/year-index-inplace.schema",
+      "schemaWorkbook": "ag/irrigation/application-records/year-index-inplace.schema/schema.xlsx",
+      "dataSchema": "ag/irrigation/application-records/year-index-inplace.schema/schema.data.json",
+      "examples": [
+        {
+          "workbook": "ag/irrigation/application-records/year-index-inplace.schema/example.1.xlsx",
+          "expectedJson": "ag/irrigation/application-records/year-index-inplace.schema/example.1.json",
+          "totsPath": "ag/irrigation/application-records/2026.xlsx",
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "name": "grain_storage_inventory",
+      "description": "Grain bin inventory and movement history.",
+      "leafPath": "ag/inventory/grain/year-index/2026.schema",
+      "schemaWorkbook": "ag/inventory/grain/year-index/2026.schema/schema.xlsx",
+      "dataSchema": "ag/inventory/grain/year-index/2026.schema/schema.data.json",
+      "examples": [
+        {
+          "workbook": "ag/inventory/grain/year-index/2026.schema/example.1.xlsx",
+          "expectedJson": "ag/inventory/grain/year-index/2026.schema/example.1.json",
+          "totsPath": "ag/inventory/grain/year-index/2026.xlsx",
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "name": "livestock_feed_ration",
+      "description": "Livestock feed ration sheet.",
+      "leafPath": "ag/livestock/rations/year-index/2026/ration-name-index-inplace.schema",
+      "schemaWorkbook": "ag/livestock/rations/year-index/2026/ration-name-index-inplace.schema/schema.xlsx",
+      "dataSchema": "ag/livestock/rations/year-index/2026/ration-name-index-inplace.schema/schema.data.json",
+      "examples": [
+        {
+          "workbook": "ag/livestock/rations/year-index/2026/ration-name-index-inplace.schema/example.1.xlsx",
+          "expectedJson": "ag/livestock/rations/year-index/2026/ration-name-index-inplace.schema/example.1.json",
+          "totsPath": "ag/livestock/rations/year-index/2026/growing-steer-800-lb.xlsx",
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "name": "pesticide_inventory",
+      "description": "Pesticide inventory list.",
+      "leafPath": "ag/inventory/pesticide/year-index/2026.schema",
+      "schemaWorkbook": "ag/inventory/pesticide/year-index/2026.schema/schema.xlsx",
+      "dataSchema": "ag/inventory/pesticide/year-index/2026.schema/schema.data.json",
+      "examples": [
+        {
+          "workbook": "ag/inventory/pesticide/year-index/2026.schema/example.1.xlsx",
+          "expectedJson": "ag/inventory/pesticide/year-index/2026.schema/example.1.json",
+          "totsPath": "ag/inventory/pesticide/year-index/2026.xlsx",
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "name": "crop_budget",
+      "description": "Crop budget and cost-of-production line items.",
+      "leafPath": "ag/financial/crop-budget/year-index/2026.schema",
+      "schemaWorkbook": "ag/financial/crop-budget/year-index/2026.schema/schema.xlsx",
+      "dataSchema": "ag/financial/crop-budget/year-index/2026.schema/schema.data.json",
+      "examples": [
+        {
+          "workbook": "ag/financial/crop-budget/year-index/2026.schema/example.1.xlsx",
+          "expectedJson": "ag/financial/crop-budget/year-index/2026.schema/example.1.json",
+          "totsPath": "ag/financial/crop-budget/year-index/2026.xlsx",
+          "attachments": []
+        }
+      ]
+    },
+    {
+      "name": "tile_map",
+      "description": "Tile map for field drainage and conservation features.",
+      "leafPath": "ag/tile_maps/field-index/north80.schema",
+      "schemaWorkbook": "ag/tile_maps/field-index/north80.schema/schema.xlsx",
+      "dataSchema": "ag/tile_maps/field-index/north80.schema/schema.data.json",
+      "examples": [
+        {
+          "workbook": "ag/tile_maps/field-index/north80.schema/example.1.xlsx",
+          "expectedJson": "ag/tile_maps/field-index/north80.schema/example.1.json",
+          "totsPath": "ag/tile_maps/field-index/north80.xlsx",
+          "attachments": []
+        }
+      ]
+    }
+  ]
+}

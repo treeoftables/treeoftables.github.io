@@ -1,0 +1,79 @@
+{
+  "$schema": "schema.catalog.schema.json",
+  "version": "tots-catalog/v1",
+  "name": "Tree of Tables local schema catalog",
+  "description": "Example master catalog for resolving local and distributed TOTS schema roots.",
+  "sources": [
+    {
+      "id": "local-ag-fixtures",
+      "sourceType": "local",
+      "description": "The local agriculture fixture tree in this repository.",
+      "enabled": true,
+      "namespace": "",
+      "schemaRoot": ".",
+      "rootManifest": "manifest.json",
+      "priority": 0
+    },
+    {
+      "id": "hosted-ag-example",
+      "sourceType": "url",
+      "description": "Example hosted schema root URL.",
+      "enabled": false,
+      "namespace": "ag",
+      "url": "https://schemas.example.com/tots/ag/",
+      "rootManifest": "manifest.json",
+      "priority": 10
+    },
+    {
+      "id": "git-equipment-example",
+      "sourceType": "git",
+      "description": "Example Git-backed schema root.",
+      "enabled": false,
+      "namespace": "equipment",
+      "git": {
+        "url": "https://github.com/example/equipment-tots-schemas.git",
+        "ref": "v1.0.0",
+        "schemaRoot": "schema/tots"
+      },
+      "rootManifest": "manifest.json",
+      "priority": 20
+    },
+    {
+      "id": "npm-ag-example",
+      "sourceType": "npm",
+      "description": "Example npm-published schema package.",
+      "enabled": false,
+      "namespace": "ag",
+      "package": {
+        "name": "@treeoftables/ag-schemas",
+        "version": "^1.0.0",
+        "schemaRoot": "schema/tots"
+      },
+      "rootManifest": "manifest.json",
+      "priority": 30
+    },
+    {
+      "id": "bundle-finance-example",
+      "sourceType": "bundle",
+      "description": "Example packaged schema bundle.",
+      "enabled": false,
+      "namespace": "finance",
+      "bundle": {
+        "url": "https://schemas.example.com/tots/finance/v1/finance-tots.zip",
+        "schemaRoot": "schema/tots",
+        "integrity": "sha256-example"
+      },
+      "rootManifest": "manifest.json",
+      "priority": 40
+    },
+    {
+      "id": "manifest-project-example",
+      "sourceType": "manifest",
+      "description": "Example project-level .tots-manifest.json discovery entry.",
+      "enabled": false,
+      "namespace": "custom",
+      "manifest": "https://schemas.example.com/custom-project/.tots-manifest.json",
+      "priority": 50
+    }
+  ]
+}

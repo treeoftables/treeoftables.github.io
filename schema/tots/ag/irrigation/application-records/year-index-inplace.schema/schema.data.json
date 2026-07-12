@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://treeoftables.org/fixtures/ag/irrigation/application-records/year-index-inplace.schema/schema.data.json",
+  "title": "irrigation_log data schema",
+  "type": "object",
+  "properties": {
+    "system": {
+      "type": "object",
+      "properties": {
+        "field_id": {
+          "type": "string"
+        },
+        "system_type": {
+          "type": "string"
+        },
+        "nozzle_package": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "field_id",
+        "system_type",
+        "nozzle_package"
+      ],
+      "additionalProperties": false
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "start_time": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "end_time": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "pivot_zone": {
+            "type": "string"
+          },
+          "runtime_hours": {
+            "type": "number"
+          },
+          "applied_in": {
+            "type": "number"
+          },
+          "pressure_psi": {
+            "type": "number"
+          },
+          "rain_offset_in": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "start_time",
+          "end_time",
+          "pivot_zone",
+          "runtime_hours",
+          "applied_in",
+          "pressure_psi",
+          "rain_offset_in"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "system",
+    "events"
+  ],
+  "additionalProperties": false
+}

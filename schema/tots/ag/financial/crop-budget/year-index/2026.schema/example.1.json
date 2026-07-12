@@ -1,0 +1,94 @@
+{
+  "data": {
+    "budget": {
+      "crop_year": 2025,
+      "crop": "corn",
+      "budget_acres": 1200,
+      "expected_yield_bu_ac": 215
+    },
+    "line_items": [
+      {
+        "category": "seed",
+        "item": "corn seed",
+        "cost_per_ac": 118,
+        "notes": "34k population"
+      },
+      {
+        "category": "fertility",
+        "item": "nitrogen",
+        "cost_per_ac": 92,
+        "notes": "spring applied"
+      },
+      {
+        "category": "crop protection",
+        "item": "herbicide",
+        "cost_per_ac": 44,
+        "notes": "pre plus post"
+      }
+    ]
+  },
+  "meta": {},
+  "tots": {
+    "version": "tots/v1",
+    "leafPath": "ag/financial/crop-budget/year-index/2026.schema",
+    "pathContext": {
+      "year-index": "2026"
+    },
+    "encoding": {
+      "input": "xlsx",
+      "canonical": [
+        "xlsx",
+        "csv",
+        "csvf",
+        "csvf.zip"
+      ]
+    },
+    "sheets": {
+      "order": [
+        "Crop Budget"
+      ]
+    },
+    "sections": {
+      "budget": {
+        "kind": "object",
+        "sheet": "Crop Budget",
+        "order": 1,
+        "required": true,
+        "locateMode": "sentinel-row",
+        "startPattern": "BUDGET"
+      },
+      "line_items": {
+        "kind": "table",
+        "sheet": "Crop Budget",
+        "order": 2,
+        "required": true,
+        "locateMode": "sentinel-row",
+        "startPattern": "LINE ITEMS"
+      }
+    },
+    "input": {
+      "totsPath": "ag/financial/crop-budget/year-index/2026.xlsx",
+      "schemaLeafPath": "ag/financial/crop-budget/year-index/2026.schema",
+      "totsPathSource": "explicit"
+    },
+    "schema": {
+      "id": "builtin",
+      "sourceType": "builtin",
+      "leafPath": "ag/financial/crop-budget/year-index/2026.schema",
+      "mountedLeafPath": "ag/financial/crop-budget/year-index/2026.schema"
+    },
+    "sources": {
+      "rootDiscovery": {
+        "method": "marker",
+        "marker": ".tots-manifest.json"
+      },
+      "schema": {
+        "id": "builtin",
+        "sourceType": "builtin",
+        "leafPath": "ag/financial/crop-budget/year-index/2026.schema",
+        "mountedLeafPath": "ag/financial/crop-budget/year-index/2026.schema"
+      }
+    },
+    "diagnostics": []
+  }
+}

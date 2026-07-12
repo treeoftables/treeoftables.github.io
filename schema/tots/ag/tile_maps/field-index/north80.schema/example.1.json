@@ -1,0 +1,79 @@
+{
+  "data": {
+    "practices": [
+      {
+        "practice_id": "TD-001",
+        "practice_type": "tile main",
+        "installation_date": "2018-09-15",
+        "material": "dual wall plastic",
+        "size": "8 in",
+        "geometry_wkt": "LINESTRING(-93.099 41.101,-93.091 41.107)",
+        "maintenance_notes": "Outlet cleaned spring 2025"
+      },
+      {
+        "practice_id": "WASCOB-01",
+        "practice_type": "water and sediment control basin",
+        "installation_date": "2020-08-20",
+        "material": "earthwork",
+        "size": "0.4 ac",
+        "geometry_wkt": "POINT(-93.094 41.104)",
+        "maintenance_notes": "Inspect after 2 inch rain events"
+      }
+    ]
+  },
+  "meta": {},
+  "tots": {
+    "version": "tots/v1",
+    "leafPath": "ag/tile_maps/field-index/north80.schema",
+    "pathContext": {
+      "field-index": "north80"
+    },
+    "encoding": {
+      "input": "xlsx",
+      "canonical": [
+        "xlsx",
+        "csv",
+        "csvf",
+        "csvf.zip"
+      ]
+    },
+    "sheets": {
+      "order": [
+        "Tile Map"
+      ]
+    },
+    "sections": {
+      "practices": {
+        "kind": "table",
+        "sheet": "Tile Map",
+        "order": 1,
+        "required": true,
+        "locateMode": "ordered-default"
+      }
+    },
+    "input": {
+      "totsPath": "ag/tile_maps/field-index/north80.xlsx",
+      "schemaLeafPath": "ag/tile_maps/field-index/north80.schema",
+      "totsPathSource": "explicit"
+    },
+    "schema": {
+      "id": "builtin",
+      "sourceType": "builtin",
+      "leafPath": "ag/tile_maps/field-index/north80.schema",
+      "mountedLeafPath": "ag/tile_maps/field-index/north80.schema"
+    },
+    "sources": {
+      "rootDiscovery": {
+        "method": "marker",
+        "marker": ".tots-manifest.json"
+      },
+      "schema": {
+        "id": "builtin",
+        "sourceType": "builtin",
+        "leafPath": "ag/tile_maps/field-index/north80.schema",
+        "mountedLeafPath": "ag/tile_maps/field-index/north80.schema"
+      }
+    },
+    "diagnostics": []
+  }
+}

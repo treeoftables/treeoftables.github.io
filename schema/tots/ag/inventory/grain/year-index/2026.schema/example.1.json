@@ -1,0 +1,83 @@
+{
+  "data": {
+    "bin": {
+      "bin_id": "BIN-01",
+      "capacity_bu": 25000,
+      "fan_type": "centrifugal"
+    },
+    "snapshots": [
+      {
+        "snapshot_date": "2025-11-01",
+        "commodity": "corn",
+        "bushels": 18250,
+        "moisture_pct": 15.2,
+        "test_weight_lb_bu": 57.8,
+        "avg_temp_f": 42
+      }
+    ]
+  },
+  "meta": {},
+  "tots": {
+    "version": "tots/v1",
+    "leafPath": "ag/inventory/grain/year-index/2026.schema",
+    "pathContext": {
+      "year-index": "2026"
+    },
+    "encoding": {
+      "input": "xlsx",
+      "canonical": [
+        "xlsx",
+        "csv",
+        "csvf",
+        "csvf.zip"
+      ]
+    },
+    "sheets": {
+      "order": [
+        "Grain Bin"
+      ]
+    },
+    "sections": {
+      "bin": {
+        "kind": "object",
+        "sheet": "Grain Bin",
+        "order": 1,
+        "required": true,
+        "locateMode": "sentinel-row",
+        "startPattern": "BIN"
+      },
+      "snapshots": {
+        "kind": "table",
+        "sheet": "Grain Bin",
+        "order": 2,
+        "required": true,
+        "locateMode": "sentinel-row",
+        "startPattern": "SNAPSHOTS"
+      }
+    },
+    "input": {
+      "totsPath": "ag/inventory/grain/year-index/2026.xlsx",
+      "schemaLeafPath": "ag/inventory/grain/year-index/2026.schema",
+      "totsPathSource": "explicit"
+    },
+    "schema": {
+      "id": "builtin",
+      "sourceType": "builtin",
+      "leafPath": "ag/inventory/grain/year-index/2026.schema",
+      "mountedLeafPath": "ag/inventory/grain/year-index/2026.schema"
+    },
+    "sources": {
+      "rootDiscovery": {
+        "method": "marker",
+        "marker": ".tots-manifest.json"
+      },
+      "schema": {
+        "id": "builtin",
+        "sourceType": "builtin",
+        "leafPath": "ag/inventory/grain/year-index/2026.schema",
+        "mountedLeafPath": "ag/inventory/grain/year-index/2026.schema"
+      }
+    },
+    "diagnostics": []
+  }
+}

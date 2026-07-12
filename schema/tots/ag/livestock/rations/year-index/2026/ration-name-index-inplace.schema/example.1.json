@@ -1,0 +1,93 @@
+{
+  "data": {
+    "ration": {
+      "ration_name": "Growing Steer 800 lb",
+      "species": "beef",
+      "class": "growing steer",
+      "effective_date": "2025-01-15"
+    },
+    "ingredients": [
+      {
+        "ingredient": "corn silage",
+        "dry_matter_pct": 35,
+        "as_fed_lbs_per_head": 28,
+        "dm_lbs_per_head": 9.8,
+        "crude_protein_pct": 8.2,
+        "net_energy_mcal_lb": 0.72
+      },
+      {
+        "ingredient": "dry corn",
+        "dry_matter_pct": 88,
+        "as_fed_lbs_per_head": 8,
+        "dm_lbs_per_head": 7.04,
+        "crude_protein_pct": 9,
+        "net_energy_mcal_lb": 0.98
+      }
+    ]
+  },
+  "meta": {},
+  "tots": {
+    "version": "tots/v1",
+    "leafPath": "ag/livestock/rations/year-index/2026/ration-name-index-inplace.schema",
+    "pathContext": {
+      "year-index": "2026",
+      "ration-name-index": "growing-steer-800-lb"
+    },
+    "encoding": {
+      "input": "xlsx",
+      "canonical": [
+        "xlsx",
+        "csv",
+        "csvf",
+        "csvf.zip"
+      ]
+    },
+    "sheets": {
+      "order": [
+        "Feed Ration"
+      ]
+    },
+    "sections": {
+      "ration": {
+        "kind": "object",
+        "sheet": "Feed Ration",
+        "order": 1,
+        "required": true,
+        "locateMode": "sentinel-row",
+        "startPattern": "RATION"
+      },
+      "ingredients": {
+        "kind": "table",
+        "sheet": "Feed Ration",
+        "order": 2,
+        "required": true,
+        "locateMode": "sentinel-row",
+        "startPattern": "INGREDIENTS"
+      }
+    },
+    "input": {
+      "totsPath": "ag/livestock/rations/year-index/2026/growing-steer-800-lb.xlsx",
+      "schemaLeafPath": "ag/livestock/rations/year-index/2026/ration-name-index-inplace.schema",
+      "totsPathSource": "explicit"
+    },
+    "schema": {
+      "id": "builtin",
+      "sourceType": "builtin",
+      "leafPath": "ag/livestock/rations/year-index/2026/ration-name-index-inplace.schema",
+      "mountedLeafPath": "ag/livestock/rations/year-index/2026/ration-name-index-inplace.schema"
+    },
+    "sources": {
+      "rootDiscovery": {
+        "method": "marker",
+        "marker": ".tots-manifest.json"
+      },
+      "schema": {
+        "id": "builtin",
+        "sourceType": "builtin",
+        "leafPath": "ag/livestock/rations/year-index/2026/ration-name-index-inplace.schema",
+        "mountedLeafPath": "ag/livestock/rations/year-index/2026/ration-name-index-inplace.schema"
+      }
+    },
+    "diagnostics": []
+  }
+}

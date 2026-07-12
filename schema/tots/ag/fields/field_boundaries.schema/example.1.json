@@ -1,0 +1,94 @@
+{
+  "data": {
+    "fields": [
+      {
+        "grower": "Ault Family Farms",
+        "farm": "Home Farm",
+        "field": "North 80",
+        "acres": 79.6,
+        "boundary_wkt": "POLYGON((-93.100 41.100,-93.090 41.100,-93.090 41.110,-93.100 41.110,-93.100 41.100))"
+      },
+      {
+        "grower": "Ault Family Farms",
+        "farm": "Home Farm",
+        "field": "South 40",
+        "acres": 41.2,
+        "boundary_wkt": "POLYGON((-93.100 41.080,-93.092 41.080,-93.092 41.088,-93.100 41.088,-93.100 41.080))"
+      },
+      {
+        "grower": "Miller Farms",
+        "farm": "River Bottom",
+        "field": "East 60",
+        "acres": 58.9,
+        "boundary_wkt": "POLYGON((-93.120 41.090,-93.110 41.090,-93.110 41.100,-93.120 41.100,-93.120 41.090))"
+      }
+    ]
+  },
+  "meta": {},
+  "tots": {
+    "version": "tots/v1",
+    "leafPath": "ag/fields/field_boundaries.schema",
+    "pathContext": {},
+    "encoding": {
+      "input": "xlsx",
+      "canonical": [
+        "xlsx",
+        "csv",
+        "csvf",
+        "csvf.zip"
+      ]
+    },
+    "sheets": {
+      "order": [
+        "fields"
+      ]
+    },
+    "sections": {
+      "fields": {
+        "kind": "table",
+        "sheet": "fields",
+        "order": 1,
+        "required": true,
+        "locateMode": "ordered-default"
+      },
+      "growers": {
+        "kind": "table",
+        "sheet": "growers",
+        "order": 2,
+        "required": false,
+        "locateMode": "ordered-default"
+      },
+      "farms": {
+        "kind": "table",
+        "sheet": "farms",
+        "order": 3,
+        "required": false,
+        "locateMode": "ordered-default"
+      }
+    },
+    "input": {
+      "totsPath": "ag/fields/field_boundaries.xlsx",
+      "schemaLeafPath": "ag/fields/field_boundaries.schema",
+      "totsPathSource": "explicit"
+    },
+    "schema": {
+      "id": "builtin",
+      "sourceType": "builtin",
+      "leafPath": "ag/fields/field_boundaries.schema",
+      "mountedLeafPath": "ag/fields/field_boundaries.schema"
+    },
+    "sources": {
+      "rootDiscovery": {
+        "method": "marker",
+        "marker": ".tots-manifest.json"
+      },
+      "schema": {
+        "id": "builtin",
+        "sourceType": "builtin",
+        "leafPath": "ag/fields/field_boundaries.schema",
+        "mountedLeafPath": "ag/fields/field_boundaries.schema"
+      }
+    },
+    "diagnostics": []
+  }
+}

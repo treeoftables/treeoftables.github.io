@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://treeoftables.org/fixtures/ag/harvest/yield-moisture/year-index/2026/field-index/north80.schema/schema.data.json",
+  "title": "harvest_yield_moisture_map data schema",
+  "type": "object",
+  "properties": {
+    "summary": {
+      "type": "object",
+      "properties": {
+        "grower_id": {
+          "type": "string"
+        },
+        "farm_id": {
+          "type": "string"
+        },
+        "field_id": {
+          "type": "string"
+        },
+        "crop_year": {
+          "type": "integer"
+        },
+        "crop": {
+          "type": "string"
+        },
+        "hybrid": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "grower_id",
+        "farm_id",
+        "field_id",
+        "crop_year",
+        "crop"
+      ],
+      "additionalProperties": false
+    },
+    "yield_points": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "latitude": {
+            "type": "number"
+          },
+          "longitude": {
+            "type": "number"
+          },
+          "yield_bu_ac": {
+            "type": "number"
+          },
+          "moisture_pct": {
+            "type": "number"
+          },
+          "speed_mph": {
+            "type": "number"
+          },
+          "heading_deg": {
+            "type": "number"
+          },
+          "pass_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "timestamp",
+          "latitude",
+          "longitude",
+          "yield_bu_ac",
+          "moisture_pct",
+          "speed_mph",
+          "heading_deg",
+          "pass_id"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "summary",
+    "yield_points"
+  ],
+  "additionalProperties": false
+}

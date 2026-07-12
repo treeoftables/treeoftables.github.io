@@ -1,0 +1,89 @@
+{
+  "data": {
+    "equipment": [
+      {
+        "equipment_id": "TRACTOR-01",
+        "type": "tractor",
+        "make": "John Deere",
+        "model": "8R 340",
+        "year": 2022,
+        "serial_number": "1RW8340DANC123456",
+        "engine_serial_number": "PE6090X123456",
+        "oil_filter_part_number": "RE509672",
+        "fuel_filter_part_number": "RE539465",
+        "water_separator_part_number": "RE541925",
+        "hydraulic_filter_part_number": "RE210857",
+        "transmission_filter_part_number": "RE577250"
+      },
+      {
+        "equipment_id": "COMBINE-01",
+        "type": "combine",
+        "make": "Case IH",
+        "model": "8250",
+        "year": 2021,
+        "serial_number": "YLG245678",
+        "engine_serial_number": "FPT123456",
+        "oil_filter_part_number": "87409203",
+        "fuel_filter_part_number": "84214564",
+        "water_separator_part_number": "84228488",
+        "hydraulic_filter_part_number": "84226263",
+        "transmission_filter_part_number": "84226261"
+      }
+    ]
+  },
+  "meta": {},
+  "tots": {
+    "version": "tots/v1",
+    "leafPath": "ag/equipment/parts/filters/year-index/2026.schema",
+    "pathContext": {
+      "year-index": "2026"
+    },
+    "encoding": {
+      "input": "xlsx",
+      "canonical": [
+        "xlsx",
+        "csv",
+        "csvf",
+        "csvf.zip"
+      ]
+    },
+    "sheets": {
+      "order": [
+        "Machinery"
+      ]
+    },
+    "sections": {
+      "equipment": {
+        "kind": "table",
+        "sheet": "Machinery",
+        "order": 1,
+        "required": true,
+        "locateMode": "ordered-default"
+      }
+    },
+    "input": {
+      "totsPath": "ag/equipment/parts/filters/year-index/2026.xlsx",
+      "schemaLeafPath": "ag/equipment/parts/filters/year-index/2026.schema",
+      "totsPathSource": "explicit"
+    },
+    "schema": {
+      "id": "builtin",
+      "sourceType": "builtin",
+      "leafPath": "ag/equipment/parts/filters/year-index/2026.schema",
+      "mountedLeafPath": "ag/equipment/parts/filters/year-index/2026.schema"
+    },
+    "sources": {
+      "rootDiscovery": {
+        "method": "marker",
+        "marker": ".tots-manifest.json"
+      },
+      "schema": {
+        "id": "builtin",
+        "sourceType": "builtin",
+        "leafPath": "ag/equipment/parts/filters/year-index/2026.schema",
+        "mountedLeafPath": "ag/equipment/parts/filters/year-index/2026.schema"
+      }
+    },
+    "diagnostics": []
+  }
+}

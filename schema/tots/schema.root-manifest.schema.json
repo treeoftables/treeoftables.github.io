@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://treeoftables.org/schemas/schema.root-manifest.schema.json",
+  "title": "TOTS project manifest",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "schemaRoot": {
+      "type": "string"
+    },
+    "rootManifest": {
+      "type": "string"
+    },
+    "catalog": {
+      "type": "string"
+    },
+    "namespace": {
+      "type": "string"
+    },
+    "package": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  },
+  "required": [
+    "version",
+    "schemaRoot"
+  ],
+  "additionalProperties": false
+}

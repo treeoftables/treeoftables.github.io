@@ -1,0 +1,92 @@
+{
+  "data": {
+    "application": {
+      "application_date": "2025-06-08",
+      "field_id": "NORTH-80",
+      "applicator": "Dana Miller",
+      "crop": "corn",
+      "target_pest": "waterhemp"
+    },
+    "products": [
+      {
+        "product_name": "Acuron",
+        "epa_registration_number": "100-1466",
+        "rate_per_ac": 2.5,
+        "rate_unit": "qt/ac",
+        "restricted_entry_hours": 24
+      },
+      {
+        "product_name": "Atrazine 4L",
+        "epa_registration_number": "100-497",
+        "rate_per_ac": 1,
+        "rate_unit": "qt/ac",
+        "restricted_entry_hours": 12
+      }
+    ]
+  },
+  "meta": {},
+  "tots": {
+    "version": "tots/v1",
+    "leafPath": "ag/spray/application-records/year-index/2026/field-name-index-inplace.schema",
+    "pathContext": {
+      "year-index": "2026",
+      "field-name-index": "north80"
+    },
+    "encoding": {
+      "input": "xlsx",
+      "canonical": [
+        "xlsx",
+        "csv",
+        "csvf",
+        "csvf.zip"
+      ]
+    },
+    "sheets": {
+      "order": [
+        "Spray Record"
+      ]
+    },
+    "sections": {
+      "application": {
+        "kind": "object",
+        "sheet": "Spray Record",
+        "order": 1,
+        "required": true,
+        "locateMode": "sentinel-row",
+        "startPattern": "APPLICATION"
+      },
+      "products": {
+        "kind": "table",
+        "sheet": "Spray Record",
+        "order": 2,
+        "required": true,
+        "locateMode": "sentinel-row",
+        "startPattern": "PRODUCTS"
+      }
+    },
+    "input": {
+      "totsPath": "ag/spray/application-records/year-index/2026/north80.xlsx",
+      "schemaLeafPath": "ag/spray/application-records/year-index/2026/field-name-index-inplace.schema",
+      "totsPathSource": "explicit"
+    },
+    "schema": {
+      "id": "builtin",
+      "sourceType": "builtin",
+      "leafPath": "ag/spray/application-records/year-index/2026/field-name-index-inplace.schema",
+      "mountedLeafPath": "ag/spray/application-records/year-index/2026/field-name-index-inplace.schema"
+    },
+    "sources": {
+      "rootDiscovery": {
+        "method": "marker",
+        "marker": ".tots-manifest.json"
+      },
+      "schema": {
+        "id": "builtin",
+        "sourceType": "builtin",
+        "leafPath": "ag/spray/application-records/year-index/2026/field-name-index-inplace.schema",
+        "mountedLeafPath": "ag/spray/application-records/year-index/2026/field-name-index-inplace.schema"
+      }
+    },
+    "diagnostics": []
+  }
+}

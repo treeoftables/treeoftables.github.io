@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://treeoftables.org/fixtures/ag/financial/crop-budget/year-index/2026.schema/schema.data.json",
+  "title": "crop_budget data schema",
+  "type": "object",
+  "properties": {
+    "budget": {
+      "type": "object",
+      "properties": {
+        "crop_year": {
+          "type": "integer"
+        },
+        "crop": {
+          "type": "string"
+        },
+        "budget_acres": {
+          "type": "integer"
+        },
+        "expected_yield_bu_ac": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "crop_year",
+        "crop",
+        "budget_acres",
+        "expected_yield_bu_ac"
+      ],
+      "additionalProperties": false
+    },
+    "line_items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "string"
+          },
+          "item": {
+            "type": "string"
+          },
+          "cost_per_ac": {
+            "type": "number"
+          },
+          "notes": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "category",
+          "item",
+          "cost_per_ac",
+          "notes"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "budget",
+    "line_items"
+  ],
+  "additionalProperties": false
+}

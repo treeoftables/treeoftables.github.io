@@ -1,0 +1,112 @@
+{
+  "data": {
+    "station": {
+      "station_id": "STATION-01",
+      "name": "North 80 Station",
+      "latitude": 41.105,
+      "longitude": -93.096,
+      "interval_minutes": 15
+    },
+    "readings": [
+      {
+        "timestamp": "2025-07-15T12:00:00Z",
+        "air_temp_f": 78.4,
+        "relative_humidity_pct": 82,
+        "wind_speed_mph": 7.2,
+        "wind_direction_deg": 210,
+        "rain_in": 0,
+        "solar_radiation_w_m2": 650,
+        "leaf_wetness_min": 0
+      },
+      {
+        "timestamp": "2025-07-15T12:15:00Z",
+        "air_temp_f": 79.1,
+        "relative_humidity_pct": 80,
+        "wind_speed_mph": 7.6,
+        "wind_direction_deg": 215,
+        "rain_in": 0,
+        "solar_radiation_w_m2": 690,
+        "leaf_wetness_min": 0
+      }
+    ]
+  },
+  "meta": {
+    "readings": {
+      "units": {
+        "air_temp_f": "F",
+        "relative_humidity_pct": "%",
+        "wind_speed_mph": "mph",
+        "wind_direction_deg": "deg",
+        "rain_in": "in",
+        "solar_radiation_w_m2": "W/m2",
+        "leaf_wetness_min": "min"
+      }
+    }
+  },
+  "tots": {
+    "version": "tots/v1",
+    "leafPath": "ag/weather/station-index/home/year-index/2026.schema",
+    "pathContext": {
+      "station-index": "home",
+      "year-index": "2026"
+    },
+    "encoding": {
+      "input": "xlsx",
+      "canonical": [
+        "xlsx",
+        "csv",
+        "csvf",
+        "csvf.zip"
+      ]
+    },
+    "sheets": {
+      "order": [
+        "Weather Log"
+      ]
+    },
+    "sections": {
+      "station": {
+        "kind": "object",
+        "sheet": "Weather Log",
+        "order": 1,
+        "required": true,
+        "locateMode": "sentinel-row",
+        "startPattern": "STATION"
+      },
+      "readings": {
+        "kind": "table",
+        "sheet": "Weather Log",
+        "order": 2,
+        "required": true,
+        "locateMode": "sentinel-row",
+        "startPattern": "READINGS",
+        "rowTypeColumn": "_row_type",
+        "rowTypeSet": "standard"
+      }
+    },
+    "input": {
+      "totsPath": "ag/weather/station-index/home/year-index/2026.xlsx",
+      "schemaLeafPath": "ag/weather/station-index/home/year-index/2026.schema",
+      "totsPathSource": "explicit"
+    },
+    "schema": {
+      "id": "builtin",
+      "sourceType": "builtin",
+      "leafPath": "ag/weather/station-index/home/year-index/2026.schema",
+      "mountedLeafPath": "ag/weather/station-index/home/year-index/2026.schema"
+    },
+    "sources": {
+      "rootDiscovery": {
+        "method": "marker",
+        "marker": ".tots-manifest.json"
+      },
+      "schema": {
+        "id": "builtin",
+        "sourceType": "builtin",
+        "leafPath": "ag/weather/station-index/home/year-index/2026.schema",
+        "mountedLeafPath": "ag/weather/station-index/home/year-index/2026.schema"
+      }
+    },
+    "diagnostics": []
+  }
+}

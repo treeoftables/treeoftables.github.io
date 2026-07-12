@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://treeoftables.org/schemas/schema.meta.json",
+  "title": "TOTS semantic metadata",
+  "type": "object",
+  "additionalProperties": {
+    "type": "object",
+    "properties": {
+      "units": {
+        "type": "object",
+        "additionalProperties": {
+          "type": "string"
+        }
+      },
+      "settings": {
+        "type": "object",
+        "additionalProperties": true
+      },
+      "comments": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": true
+        }
+      }
+    },
+    "additionalProperties": true
+  }
+}

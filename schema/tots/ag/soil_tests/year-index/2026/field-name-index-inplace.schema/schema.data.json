@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://treeoftables.org/fixtures/ag/soil_tests/year-index/2026/field-name-index-inplace.schema/schema.data.json",
+  "title": "soil_test_result data schema",
+  "type": "object",
+  "properties": {
+    "sample": {
+      "type": "object",
+      "properties": {
+        "lab_name": {
+          "type": "string"
+        },
+        "sample_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "field_id": {
+          "type": "string"
+        },
+        "crop_year": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "lab_name",
+        "sample_date",
+        "field_id",
+        "crop_year"
+      ],
+      "additionalProperties": false
+    },
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sample_id": {
+            "type": "string"
+          },
+          "depth_in": {
+            "type": "string"
+          },
+          "ph": {
+            "type": "number"
+          },
+          "organic_matter_pct": {
+            "type": "number"
+          },
+          "cec_meq_100g": {
+            "type": "number"
+          },
+          "phosphorus_ppm": {
+            "type": "number"
+          },
+          "potassium_ppm": {
+            "type": "number"
+          },
+          "recommendation": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "sample_id",
+          "depth_in",
+          "ph",
+          "organic_matter_pct",
+          "cec_meq_100g",
+          "phosphorus_ppm",
+          "potassium_ppm",
+          "recommendation"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "sample",
+    "results"
+  ],
+  "additionalProperties": false
+}

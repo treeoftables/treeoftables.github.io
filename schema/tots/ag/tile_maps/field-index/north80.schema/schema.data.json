@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://treeoftables.org/fixtures/ag/tile_maps/field-index/north80.schema/schema.data.json",
+  "title": "tile_map data schema",
+  "type": "object",
+  "properties": {
+    "practices": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "practice_id": {
+            "type": "string"
+          },
+          "practice_type": {
+            "type": "string"
+          },
+          "installation_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "material": {
+            "type": "string"
+          },
+          "size": {
+            "type": "string"
+          },
+          "geometry_wkt": {
+            "type": "string",
+            "description": "Geometry encoded as WKT or compact GeoJSON text for Milestone 1"
+          },
+          "maintenance_notes": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "practice_id",
+          "practice_type",
+          "installation_date",
+          "material",
+          "size",
+          "geometry_wkt",
+          "maintenance_notes"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "practices"
+  ],
+  "additionalProperties": false
+}

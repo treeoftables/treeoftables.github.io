@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://treeoftables.org/fixtures/ag/planting/as-planted/year-index/2026/field-name-index-inplace.schema/schema.data.json",
+  "title": "planting_population_map data schema",
+  "type": "object",
+  "properties": {
+    "summary": {
+      "type": "object",
+      "properties": {
+        "grower_id": {
+          "type": "string"
+        },
+        "farm_id": {
+          "type": "string"
+        },
+        "field_id": {
+          "type": "string"
+        },
+        "crop_year": {
+          "type": "integer"
+        },
+        "planting_date": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "required": [
+        "grower_id",
+        "farm_id",
+        "field_id",
+        "crop_year",
+        "planting_date"
+      ],
+      "additionalProperties": false
+    },
+    "population_points": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "latitude": {
+            "type": "number"
+          },
+          "longitude": {
+            "type": "number"
+          },
+          "hybrid": {
+            "type": "string"
+          },
+          "target_population_seeds_ac": {
+            "type": "number"
+          },
+          "actual_population_seeds_ac": {
+            "type": "number"
+          },
+          "singulation_pct": {
+            "type": "number"
+          },
+          "row_spacing_in": {
+            "type": "number"
+          },
+          "section_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "timestamp",
+          "latitude",
+          "longitude",
+          "hybrid",
+          "target_population_seeds_ac",
+          "actual_population_seeds_ac",
+          "singulation_pct",
+          "row_spacing_in",
+          "section_id"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "summary",
+    "population_points"
+  ],
+  "additionalProperties": false
+}

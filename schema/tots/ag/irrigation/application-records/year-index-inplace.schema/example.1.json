@@ -1,0 +1,93 @@
+{
+  "data": {
+    "system": {
+      "field_id": "NORTH-80",
+      "system_type": "center pivot",
+      "nozzle_package": "low pressure drops"
+    },
+    "events": [
+      {
+        "start_time": "2025-07-20T02:00:00Z",
+        "end_time": "2025-07-20T08:00:00Z",
+        "pivot_zone": "north",
+        "runtime_hours": 6,
+        "applied_in": 0.45,
+        "pressure_psi": 38,
+        "rain_offset_in": 0.1
+      },
+      {
+        "start_time": "2025-07-22T01:00:00Z",
+        "end_time": "2025-07-22T06:30:00Z",
+        "pivot_zone": "south",
+        "runtime_hours": 5.5,
+        "applied_in": 0.4,
+        "pressure_psi": 37,
+        "rain_offset_in": 0
+      }
+    ]
+  },
+  "meta": {},
+  "tots": {
+    "version": "tots/v1",
+    "leafPath": "ag/irrigation/application-records/year-index-inplace.schema",
+    "pathContext": {
+      "year-index": "2026"
+    },
+    "encoding": {
+      "input": "xlsx",
+      "canonical": [
+        "xlsx",
+        "csv",
+        "csvf",
+        "csvf.zip"
+      ]
+    },
+    "sheets": {
+      "order": [
+        "Irrigation"
+      ]
+    },
+    "sections": {
+      "system": {
+        "kind": "object",
+        "sheet": "Irrigation",
+        "order": 1,
+        "required": true,
+        "locateMode": "sentinel-row",
+        "startPattern": "SYSTEM"
+      },
+      "events": {
+        "kind": "table",
+        "sheet": "Irrigation",
+        "order": 2,
+        "required": true,
+        "locateMode": "sentinel-row",
+        "startPattern": "EVENTS"
+      }
+    },
+    "input": {
+      "totsPath": "ag/irrigation/application-records/2026.xlsx",
+      "schemaLeafPath": "ag/irrigation/application-records/year-index-inplace.schema",
+      "totsPathSource": "explicit"
+    },
+    "schema": {
+      "id": "builtin",
+      "sourceType": "builtin",
+      "leafPath": "ag/irrigation/application-records/year-index-inplace.schema",
+      "mountedLeafPath": "ag/irrigation/application-records/year-index-inplace.schema"
+    },
+    "sources": {
+      "rootDiscovery": {
+        "method": "marker",
+        "marker": ".tots-manifest.json"
+      },
+      "schema": {
+        "id": "builtin",
+        "sourceType": "builtin",
+        "leafPath": "ag/irrigation/application-records/year-index-inplace.schema",
+        "mountedLeafPath": "ag/irrigation/application-records/year-index-inplace.schema"
+      }
+    },
+    "diagnostics": []
+  }
+}

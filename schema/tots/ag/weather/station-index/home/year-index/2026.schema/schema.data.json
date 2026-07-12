@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://treeoftables.org/fixtures/ag/weather/station-index/home/year-index/2026.schema/schema.data.json",
+  "title": "weather_station_data_log data schema",
+  "type": "object",
+  "properties": {
+    "station": {
+      "type": "object",
+      "properties": {
+        "station_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "latitude": {
+          "type": "number"
+        },
+        "longitude": {
+          "type": "number"
+        },
+        "interval_minutes": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "station_id",
+        "name",
+        "latitude",
+        "longitude",
+        "interval_minutes"
+      ],
+      "additionalProperties": false
+    },
+    "readings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "air_temp_f": {
+            "type": "number"
+          },
+          "relative_humidity_pct": {
+            "type": "number"
+          },
+          "wind_speed_mph": {
+            "type": "number"
+          },
+          "wind_direction_deg": {
+            "type": "number"
+          },
+          "rain_in": {
+            "type": "number"
+          },
+          "solar_radiation_w_m2": {
+            "type": "number"
+          },
+          "leaf_wetness_min": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "timestamp",
+          "air_temp_f",
+          "relative_humidity_pct",
+          "wind_speed_mph",
+          "wind_direction_deg",
+          "rain_in",
+          "solar_radiation_w_m2",
+          "leaf_wetness_min"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "station",
+    "readings"
+  ],
+  "additionalProperties": false
+}

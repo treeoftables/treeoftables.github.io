@@ -1,0 +1,144 @@
+{
+  "data": {
+    "report": {
+      "scout_date": "2025-07-15",
+      "crop": "corn",
+      "growth_stage": "VT/R1",
+      "scout_name": "Dana Miller",
+      "weather": "Warm and humid, light south wind"
+    },
+    "observations": [
+      {
+        "category": "stand",
+        "result": "good",
+        "severity": "low",
+        "notes": "Uniform stand, minor planter skips on west end"
+      },
+      {
+        "category": "weeds",
+        "result": "waterhemp escapes",
+        "severity": "moderate",
+        "notes": "Scattered above canopy along south edge"
+      },
+      {
+        "category": "disease",
+        "result": "gray leaf spot present",
+        "severity": "low",
+        "notes": "Lower canopy lesions, monitor after humidity"
+      },
+      {
+        "category": "insects",
+        "result": "Japanese beetle feeding",
+        "severity": "moderate",
+        "notes": "Silk clipping below threshold"
+      }
+    ],
+    "attachments": [
+      {
+        "attachment_id": "IMG-GLS-LOWER-001",
+        "observation_category": "disease",
+        "attachment_path": "attachments/gray-leaf-spot-lower-canopy.png",
+        "media_type": "image/png",
+        "description": "Lower canopy gray leaf spot lesions on corn leaf"
+      },
+      {
+        "attachment_id": "IMG-GLS-CLOSEUP-002",
+        "observation_category": "disease",
+        "attachment_path": "attachments/gray-leaf-spot-closeup.png",
+        "media_type": "image/png",
+        "description": "Close-up of rectangular gray leaf spot lesion pattern"
+      }
+    ],
+    "recommendations": [
+      {
+        "priority": "high",
+        "recommendation": "Monitor disease pressure after humid weather and reassess fungicide threshold in 5-7 days"
+      },
+      {
+        "priority": "medium",
+        "recommendation": "Map waterhemp escapes for fall herbicide planning"
+      }
+    ]
+  },
+  "meta": {},
+  "tots": {
+    "version": "tots/v1",
+    "leafPath": "ag/crop-scouting/year-index/2026/field-index/north80.schema",
+    "pathContext": {
+      "year-index": "2026",
+      "field-index": "north80"
+    },
+    "encoding": {
+      "input": "xlsx",
+      "canonical": [
+        "xlsx",
+        "csv",
+        "csvf",
+        "csvf.zip"
+      ]
+    },
+    "sheets": {
+      "order": [
+        "Scouting Report"
+      ]
+    },
+    "sections": {
+      "report": {
+        "kind": "object",
+        "sheet": "Scouting Report",
+        "order": 1,
+        "required": true,
+        "locateMode": "sentinel-row",
+        "startPattern": "REPORT"
+      },
+      "observations": {
+        "kind": "table",
+        "sheet": "Scouting Report",
+        "order": 2,
+        "required": true,
+        "locateMode": "sentinel-row",
+        "startPattern": "OBSERVATIONS"
+      },
+      "attachments": {
+        "kind": "table",
+        "sheet": "Scouting Report",
+        "order": 3,
+        "required": false,
+        "locateMode": "sentinel-row",
+        "startPattern": "ATTACHMENTS"
+      },
+      "recommendations": {
+        "kind": "table",
+        "sheet": "Scouting Report",
+        "order": 4,
+        "required": true,
+        "locateMode": "sentinel-row",
+        "startPattern": "RECOMMENDATIONS"
+      }
+    },
+    "input": {
+      "totsPath": "ag/crop-scouting/year-index/2026/field-index/north80.xlsx",
+      "schemaLeafPath": "ag/crop-scouting/year-index/2026/field-index/north80.schema",
+      "totsPathSource": "explicit"
+    },
+    "schema": {
+      "id": "builtin",
+      "sourceType": "builtin",
+      "leafPath": "ag/crop-scouting/year-index/2026/field-index/north80.schema",
+      "mountedLeafPath": "ag/crop-scouting/year-index/2026/field-index/north80.schema"
+    },
+    "sources": {
+      "rootDiscovery": {
+        "method": "marker",
+        "marker": ".tots-manifest.json"
+      },
+      "schema": {
+        "id": "builtin",
+        "sourceType": "builtin",
+        "leafPath": "ag/crop-scouting/year-index/2026/field-index/north80.schema",
+        "mountedLeafPath": "ag/crop-scouting/year-index/2026/field-index/north80.schema"
+      }
+    },
+    "diagnostics": []
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://treeoftables.org/fixtures/ag/equipment/parts/filters/year-index/2026.schema/schema.data.json",
+  "title": "machinery_inventory_filters data schema",
+  "type": "object",
+  "properties": {
+    "equipment": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "equipment_id": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "make": {
+            "type": "string"
+          },
+          "model": {
+            "type": "string"
+          },
+          "year": {
+            "type": "integer"
+          },
+          "serial_number": {
+            "type": "string"
+          },
+          "engine_serial_number": {
+            "type": "string"
+          },
+          "oil_filter_part_number": {
+            "type": "string"
+          },
+          "fuel_filter_part_number": {
+            "type": "string"
+          },
+          "water_separator_part_number": {
+            "type": "string"
+          },
+          "hydraulic_filter_part_number": {
+            "type": "string"
+          },
+          "transmission_filter_part_number": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "equipment_id",
+          "type",
+          "make",
+          "model",
+          "year",
+          "serial_number",
+          "engine_serial_number",
+          "oil_filter_part_number",
+          "fuel_filter_part_number",
+          "water_separator_part_number",
+          "hydraulic_filter_part_number",
+          "transmission_filter_part_number"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "equipment"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://treeoftables.org/fixtures/ag/fields/field_boundaries.schema/schema.data.json",
+  "title": "field_boundaries data schema",
+  "type": "object",
+  "properties": {
+    "fields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "grower": {
+            "type": "string"
+          },
+          "farm": {
+            "type": "string"
+          },
+          "field": {
+            "type": "string"
+          },
+          "fieldid": {
+            "type": "string"
+          },
+          "acres": {
+            "type": "number"
+          },
+          "boundary_wkt": {
+            "type": "string",
+            "description": "Geometry encoded as WKT or compact GeoJSON text for Milestone 1"
+          },
+          "notes": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "grower",
+          "farm",
+          "field",
+          "acres",
+          "boundary_wkt"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "growers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "grower": {
+            "type": "string"
+          },
+          "growerid": {
+            "type": "string"
+          },
+          "contact": {
+            "type": "string"
+          },
+          "notes": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "grower"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "farms": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "grower": {
+            "type": "string"
+          },
+          "farm": {
+            "type": "string"
+          },
+          "farmid": {
+            "type": "string"
+          },
+          "county": {
+            "type": "string"
+          },
+          "state": {
+            "type": "string"
+          },
+          "notes": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "grower",
+          "farm"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "fields"
+  ],
+  "additionalProperties": false
+}

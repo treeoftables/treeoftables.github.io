@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://treeoftables.org/schemas/schema.tots.json",
+  "title": "TOTS parser provenance",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "leafPath": {
+      "type": "string"
+    },
+    "pathContext": {
+      "type": "object",
+      "additionalProperties": {
+        "type": [
+          "string",
+          "number",
+          "boolean"
+        ]
+      }
+    },
+    "encoding": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "sheets": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "sections": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    },
+    "input": {
+      "type": "object",
+      "properties": {
+        "path": {
+          "type": "string"
+        },
+        "archiveEntry": {
+          "type": "string"
+        },
+        "totsPath": {
+          "type": "string"
+        },
+        "schemaLeafPath": {
+          "type": "string"
+        },
+        "totsPathSource": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "totsPath",
+        "schemaLeafPath",
+        "totsPathSource"
+      ],
+      "additionalProperties": true
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "sourceType": {
+          "type": "string"
+        },
+        "leafPath": {
+          "type": "string"
+        },
+        "mountedLeafPath": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "sourceType",
+        "leafPath",
+        "mountedLeafPath"
+      ],
+      "additionalProperties": true
+    },
+    "sources": {
+      "type": "object",
+      "properties": {
+        "rootDiscovery": {
+          "type": "object",
+          "additionalProperties": true
+        },
+        "schema": {
+          "type": "object",
+          "additionalProperties": true
+        }
+      },
+      "required": [
+        "rootDiscovery",
+        "schema"
+      ],
+      "additionalProperties": true
+    },
+    "diagnostics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    }
+  },
+  "required": [
+    "version",
+    "leafPath",
+    "pathContext",
+    "encoding",
+    "sheets",
+    "sections",
+    "input",
+    "schema",
+    "sources",
+    "diagnostics"
+  ],
+  "additionalProperties": true
+}

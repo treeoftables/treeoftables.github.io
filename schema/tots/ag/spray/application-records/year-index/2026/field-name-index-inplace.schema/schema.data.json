@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://treeoftables.org/fixtures/ag/spray/application-records/year-index/2026/field-name-index-inplace.schema/schema.data.json",
+  "title": "spray_application_record data schema",
+  "type": "object",
+  "properties": {
+    "application": {
+      "type": "object",
+      "properties": {
+        "application_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "field_id": {
+          "type": "string"
+        },
+        "applicator": {
+          "type": "string"
+        },
+        "crop": {
+          "type": "string"
+        },
+        "target_pest": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "application_date",
+        "field_id",
+        "applicator",
+        "crop",
+        "target_pest"
+      ],
+      "additionalProperties": false
+    },
+    "products": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "product_name": {
+            "type": "string"
+          },
+          "epa_registration_number": {
+            "type": "string"
+          },
+          "rate_per_ac": {
+            "type": "number"
+          },
+          "rate_unit": {
+            "type": "string"
+          },
+          "restricted_entry_hours": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "product_name",
+          "epa_registration_number",
+          "rate_per_ac",
+          "rate_unit",
+          "restricted_entry_hours"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "application",
+    "products"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,127 @@
+{
+  "data": {
+    "imagery": {
+      "field_id": "NORTH-80",
+      "crop_year": 2025,
+      "crop": "corn",
+      "index_type": "NDVI",
+      "platform": "drone"
+    },
+    "flights": [
+      {
+        "flight_date": "2025-06-10",
+        "crop_stage": "V6",
+        "altitude_ft": 300,
+        "weather": "clear, light wind"
+      },
+      {
+        "flight_date": "2025-07-03",
+        "crop_stage": "V10",
+        "altitude_ft": 300,
+        "weather": "partly cloudy, calm"
+      },
+      {
+        "flight_date": "2025-08-01",
+        "crop_stage": "R3",
+        "altitude_ft": 320,
+        "weather": "clear after rain"
+      }
+    ],
+    "images": [
+      {
+        "image_date": "2025-06-10",
+        "crop_stage": "V6",
+        "ndvi_image_path": "attachments/ndvi-2025-06-10-v6.png",
+        "mean_ndvi": 0.62,
+        "description": "Early-season stand variability visible after sidedress nitrogen"
+      },
+      {
+        "image_date": "2025-07-03",
+        "crop_stage": "V10",
+        "ndvi_image_path": "attachments/ndvi-2025-07-03-v10.png",
+        "mean_ndvi": 0.78,
+        "description": "Rapid canopy closure across most of the field"
+      },
+      {
+        "image_date": "2025-08-01",
+        "crop_stage": "R3",
+        "ndvi_image_path": "attachments/ndvi-2025-08-01-r3.png",
+        "mean_ndvi": 0.74,
+        "description": "Late-season stress beginning on lighter soil knobs"
+      }
+    ]
+  },
+  "meta": {},
+  "tots": {
+    "version": "tots/v1",
+    "leafPath": "ag/aerial-imagery/year-index/2026/field-index/north80/ndvi.schema",
+    "pathContext": {
+      "year-index": "2026",
+      "field-index": "north80"
+    },
+    "encoding": {
+      "input": "xlsx",
+      "canonical": [
+        "xlsx",
+        "csv",
+        "csvf",
+        "csvf.zip"
+      ]
+    },
+    "sheets": {
+      "order": [
+        "NDVI Imagery"
+      ]
+    },
+    "sections": {
+      "imagery": {
+        "kind": "object",
+        "sheet": "NDVI Imagery",
+        "order": 1,
+        "required": true,
+        "locateMode": "sentinel-row",
+        "startPattern": "IMAGERY"
+      },
+      "flights": {
+        "kind": "table",
+        "sheet": "NDVI Imagery",
+        "order": 2,
+        "required": true,
+        "locateMode": "sentinel-row",
+        "startPattern": "FLIGHTS"
+      },
+      "images": {
+        "kind": "table",
+        "sheet": "NDVI Imagery",
+        "order": 3,
+        "required": true,
+        "locateMode": "sentinel-row",
+        "startPattern": "IMAGES"
+      }
+    },
+    "input": {
+      "totsPath": "ag/aerial-imagery/year-index/2026/field-index/north80/ndvi.xlsx",
+      "schemaLeafPath": "ag/aerial-imagery/year-index/2026/field-index/north80/ndvi.schema",
+      "totsPathSource": "explicit"
+    },
+    "schema": {
+      "id": "builtin",
+      "sourceType": "builtin",
+      "leafPath": "ag/aerial-imagery/year-index/2026/field-index/north80/ndvi.schema",
+      "mountedLeafPath": "ag/aerial-imagery/year-index/2026/field-index/north80/ndvi.schema"
+    },
+    "sources": {
+      "rootDiscovery": {
+        "method": "marker",
+        "marker": ".tots-manifest.json"
+      },
+      "schema": {
+        "id": "builtin",
+        "sourceType": "builtin",
+        "leafPath": "ag/aerial-imagery/year-index/2026/field-index/north80/ndvi.schema",
+        "mountedLeafPath": "ag/aerial-imagery/year-index/2026/field-index/north80/ndvi.schema"
+      }
+    },
+    "diagnostics": []
+  }
+}

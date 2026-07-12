@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://treeoftables.org/fixtures/ag/manure/application-records/year-index/2026.schema/schema.data.json",
+  "title": "fertilizer_manure_application_record data schema",
+  "type": "object",
+  "properties": {
+    "application": {
+      "type": "object",
+      "properties": {
+        "application_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "source": {
+          "type": "string"
+        },
+        "source_lot": {
+          "type": "string"
+        },
+        "field_id": {
+          "type": "string"
+        },
+        "total_gallons": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "application_date",
+        "source",
+        "source_lot",
+        "field_id",
+        "total_gallons"
+      ],
+      "additionalProperties": false
+    },
+    "nutrients": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "nutrient": {
+            "type": "string"
+          },
+          "guaranteed_analysis": {
+            "type": "string"
+          },
+          "applied_rate_lb_ac": {
+            "type": "number"
+          },
+          "incorporation_timing": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "nutrient",
+          "guaranteed_analysis",
+          "applied_rate_lb_ac",
+          "incorporation_timing"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "application",
+    "nutrients"
+  ],
+  "additionalProperties": false
+}

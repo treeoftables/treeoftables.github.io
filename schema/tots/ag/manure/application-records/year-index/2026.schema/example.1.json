@@ -1,0 +1,89 @@
+{
+  "data": {
+    "application": {
+      "application_date": "2025-04-10",
+      "source": "swine manure",
+      "source_lot": "PIT-3",
+      "field_id": "NORTH-80",
+      "total_gallons": 420000
+    },
+    "nutrients": [
+      {
+        "nutrient": "nitrogen",
+        "guaranteed_analysis": "45 lb/1000 gal",
+        "applied_rate_lb_ac": 165,
+        "incorporation_timing": "within 24 hours"
+      },
+      {
+        "nutrient": "phosphorus",
+        "guaranteed_analysis": "28 lb/1000 gal",
+        "applied_rate_lb_ac": 102,
+        "incorporation_timing": "within 24 hours"
+      }
+    ]
+  },
+  "meta": {},
+  "tots": {
+    "version": "tots/v1",
+    "leafPath": "ag/manure/application-records/year-index/2026.schema",
+    "pathContext": {
+      "year-index": "2026"
+    },
+    "encoding": {
+      "input": "xlsx",
+      "canonical": [
+        "xlsx",
+        "csv",
+        "csvf",
+        "csvf.zip"
+      ]
+    },
+    "sheets": {
+      "order": [
+        "Nutrient Application"
+      ]
+    },
+    "sections": {
+      "application": {
+        "kind": "object",
+        "sheet": "Nutrient Application",
+        "order": 1,
+        "required": true,
+        "locateMode": "sentinel-row",
+        "startPattern": "APPLICATION"
+      },
+      "nutrients": {
+        "kind": "table",
+        "sheet": "Nutrient Application",
+        "order": 2,
+        "required": true,
+        "locateMode": "sentinel-row",
+        "startPattern": "NUTRIENTS"
+      }
+    },
+    "input": {
+      "totsPath": "ag/manure/application-records/year-index/2026.xlsx",
+      "schemaLeafPath": "ag/manure/application-records/year-index/2026.schema",
+      "totsPathSource": "explicit"
+    },
+    "schema": {
+      "id": "builtin",
+      "sourceType": "builtin",
+      "leafPath": "ag/manure/application-records/year-index/2026.schema",
+      "mountedLeafPath": "ag/manure/application-records/year-index/2026.schema"
+    },
+    "sources": {
+      "rootDiscovery": {
+        "method": "marker",
+        "marker": ".tots-manifest.json"
+      },
+      "schema": {
+        "id": "builtin",
+        "sourceType": "builtin",
+        "leafPath": "ag/manure/application-records/year-index/2026.schema",
+        "mountedLeafPath": "ag/manure/application-records/year-index/2026.schema"
+      }
+    },
+    "diagnostics": []
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://treeoftables.org/fixtures/ag/aerial-imagery/year-index/2026/field-index/north80/ndvi.schema/schema.data.json",
+  "title": "field_ndvi_drone_imagery data schema",
+  "type": "object",
+  "properties": {
+    "imagery": {
+      "type": "object",
+      "properties": {
+        "field_id": {
+          "type": "string"
+        },
+        "crop_year": {
+          "type": "integer"
+        },
+        "crop": {
+          "type": "string"
+        },
+        "index_type": {
+          "type": "string"
+        },
+        "platform": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "field_id",
+        "crop_year",
+        "crop",
+        "index_type",
+        "platform"
+      ],
+      "additionalProperties": false
+    },
+    "flights": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "flight_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "crop_stage": {
+            "type": "string"
+          },
+          "altitude_ft": {
+            "type": "number"
+          },
+          "weather": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "flight_date",
+          "crop_stage",
+          "altitude_ft",
+          "weather"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "images": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "image_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "crop_stage": {
+            "type": "string"
+          },
+          "ndvi_image_path": {
+            "type": "string",
+            "contentMediaType": "image/png",
+            "description": "Relative path to an image attachment; PNG is the recommended default"
+          },
+          "mean_ndvi": {
+            "type": "number"
+          },
+          "description": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "image_date",
+          "crop_stage",
+          "ndvi_image_path",
+          "mean_ndvi",
+          "description"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "imagery",
+    "flights",
+    "images"
+  ],
+  "additionalProperties": false
+}
