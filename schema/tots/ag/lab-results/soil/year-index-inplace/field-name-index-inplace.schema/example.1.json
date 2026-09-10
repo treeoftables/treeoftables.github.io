@@ -1,0 +1,125 @@
+{
+  "data": {
+    "event": {
+      "date": "2025-03-20",
+      "event_id": "EVT-2025-0320",
+      "lab_name": "Midwest Soil Lab",
+      "lab_report_id": "MSL-4401",
+      "grower_name": "Ault Family Farms",
+      "farm_name": "Home Farm",
+      "field_name": "North 80",
+      "field_id": "NORTH-80"
+    },
+    "samples": [
+      {
+        "sample_id": "N80-A",
+        "lab_sample_id": "21-001",
+        "depth_top": 0,
+        "depth_bottom": 6,
+        "depth_units": "in",
+        "latitude": 41.1048,
+        "longitude": -93.0961,
+        "pH": 6.4,
+        "P": 24,
+        "K": 168,
+        "OM": 3.8
+      },
+      {
+        "sample_id": "N80-B",
+        "lab_sample_id": "21-002",
+        "depth_top": 0,
+        "depth_bottom": 6,
+        "depth_units": "in",
+        "latitude": 41.1051,
+        "longitude": -93.0957,
+        "pH": 6.1,
+        "P": 18,
+        "K": 142,
+        "OM": 3.4
+      }
+    ]
+  },
+  "meta": {
+    "samples": {
+      "units": {
+        "pH": "none",
+        "P": "ppm",
+        "K": "ppm",
+        "OM": "%"
+      },
+      "modusTestIds": {
+        "pH": "S-PH-1:1.02.07",
+        "P": "S-P-B1-1:10.01.03",
+        "OM": "S-SOM-LOI.15"
+      }
+    }
+  },
+  "tots": {
+    "version": "tots/v1",
+    "leafPath": "ag/lab-results/soil/year-index-inplace/field-name-index-inplace.schema",
+    "pathContext": {
+      "year-index": "2026",
+      "field-name-index": "north80"
+    },
+    "encoding": {
+      "input": "xlsx",
+      "canonical": [
+        "xlsx",
+        "csv",
+        "csvf",
+        "csvf.zip"
+      ]
+    },
+    "sheets": {
+      "order": [
+        "Lab Results"
+      ]
+    },
+    "sections": {
+      "event": {
+        "kind": "object",
+        "sheet": "Lab Results",
+        "order": 1,
+        "required": true,
+        "locateMode": "sentinel-row",
+        "startPattern": "EVENT",
+        "additionalProperties": true
+      },
+      "samples": {
+        "kind": "table",
+        "sheet": "Lab Results",
+        "order": 2,
+        "required": true,
+        "locateMode": "sentinel-row",
+        "startPattern": "SAMPLES",
+        "rowTypeColumn": "_row_type",
+        "rowTypeSet": "standard",
+        "additionalProperties": true
+      }
+    },
+    "input": {
+      "totsPath": "ag/lab-results/soil/2026/north80.xlsx",
+      "schemaLeafPath": "ag/lab-results/soil/year-index-inplace/field-name-index-inplace.schema",
+      "totsPathSource": "explicit"
+    },
+    "schema": {
+      "id": "builtin",
+      "sourceType": "builtin",
+      "leafPath": "ag/lab-results/soil/year-index-inplace/field-name-index-inplace.schema",
+      "mountedLeafPath": "ag/lab-results/soil/year-index-inplace/field-name-index-inplace.schema"
+    },
+    "sources": {
+      "rootDiscovery": {
+        "method": "marker",
+        "marker": ".tots-manifest.json"
+      },
+      "schema": {
+        "id": "builtin",
+        "sourceType": "builtin",
+        "leafPath": "ag/lab-results/soil/year-index-inplace/field-name-index-inplace.schema",
+        "mountedLeafPath": "ag/lab-results/soil/year-index-inplace/field-name-index-inplace.schema"
+      }
+    },
+    "diagnostics": []
+  }
+}

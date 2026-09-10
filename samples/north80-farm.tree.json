@@ -1,0 +1,120 @@
+{
+  "name": "Sample farm",
+  "paths": [
+    {
+      "path": "ag/fields/field_boundaries.xlsx",
+      "kind": "workbook",
+      "title": "Farmer-readable field boundary workbook with optional grower and farm lookup sheets."
+    },
+    {
+      "path": "ag/fields/field_boundaries.xlsx",
+      "kind": "workbook",
+      "title": "Farmer-readable field boundary workbook with optional grower and farm lookup sheets."
+    },
+    {
+      "path": "ag/harvest/yield-moisture/year-index/2026/field-index/north80.xlsx",
+      "kind": "workbook",
+      "title": "Yield monitor points with moisture for one field."
+    },
+    {
+      "path": "ag/planting/as-planted/year-index/2026/north80.xlsx",
+      "kind": "workbook",
+      "title": "Planting population observations for one field."
+    },
+    {
+      "path": "ag/weather/station-index/home/year-index/2026.xlsx",
+      "kind": "workbook",
+      "title": "Weather station data log with 15-minute readings."
+    },
+    {
+      "path": "ag/crop-scouting/year-index/2026/field-index/north80.xlsx",
+      "kind": "workbook",
+      "title": "Generic crop scouting report with corn-specific July Midwest content."
+    },
+    {
+      "path": "ag/crop-scouting/year-index/2026/field-index/attachments/gray-leaf-spot-lower-canopy.png",
+      "kind": "attachment",
+      "title": "Lower canopy gray leaf spot scouting photo"
+    },
+    {
+      "path": "ag/crop-scouting/year-index/2026/field-index/attachments/gray-leaf-spot-closeup.png",
+      "kind": "attachment",
+      "title": "Close-up gray leaf spot scouting photo"
+    },
+    {
+      "path": "ag/aerial-imagery/year-index/2026/field-index/north80/ndvi.xlsx",
+      "kind": "workbook",
+      "title": "Aerial NDVI drone imagery for a corn field during the growing season."
+    },
+    {
+      "path": "ag/aerial-imagery/year-index/2026/field-index/north80/attachments/ndvi-2025-06-10-v6.png",
+      "kind": "attachment",
+      "title": "Aerial NDVI image at V6"
+    },
+    {
+      "path": "ag/aerial-imagery/year-index/2026/field-index/north80/attachments/ndvi-2025-07-03-v10.png",
+      "kind": "attachment",
+      "title": "Aerial NDVI image at V10"
+    },
+    {
+      "path": "ag/aerial-imagery/year-index/2026/field-index/north80/attachments/ndvi-2025-08-01-r3.png",
+      "kind": "attachment",
+      "title": "Aerial NDVI image at R3"
+    },
+    {
+      "path": "ag/soil_tests/year-index/2026/north80.xlsx",
+      "kind": "workbook",
+      "title": "Soil sample metadata and lab nutrient results."
+    },
+    {
+      "path": "ag/lab-results/soil/2026/north80.xlsx",
+      "kind": "workbook",
+      "title": "Modus Slim-style soil lab results: event metadata plus a wide samples table with open analyte columns."
+    },
+    {
+      "path": "ag/equipment/parts/filters/year-index/2026.xlsx",
+      "kind": "workbook",
+      "title": "Machinery inventory with serial numbers and filter part numbers."
+    },
+    {
+      "path": "ag/spray/application-records/year-index/2026/north80.xlsx",
+      "kind": "workbook",
+      "title": "Regulatory-style spray application record."
+    },
+    {
+      "path": "ag/manure/application-records/year-index/2026.xlsx",
+      "kind": "workbook",
+      "title": "Fertilizer and manure application record."
+    },
+    {
+      "path": "ag/irrigation/application-records/2026.xlsx",
+      "kind": "workbook",
+      "title": "Irrigation event log."
+    },
+    {
+      "path": "ag/inventory/grain/year-index/2026.xlsx",
+      "kind": "workbook",
+      "title": "Grain bin inventory and movement history."
+    },
+    {
+      "path": "ag/livestock/rations/year-index/2026/growing-steer-800-lb.xlsx",
+      "kind": "workbook",
+      "title": "Livestock feed ration sheet."
+    },
+    {
+      "path": "ag/inventory/pesticide/year-index/2026.xlsx",
+      "kind": "workbook",
+      "title": "Pesticide inventory list."
+    },
+    {
+      "path": "ag/financial/crop-budget/year-index/2026.xlsx",
+      "kind": "workbook",
+      "title": "Crop budget and cost-of-production line items."
+    },
+    {
+      "path": "ag/tile_maps/field-index/north80.xlsx",
+      "kind": "workbook",
+      "title": "Tile map for field drainage and conservation features."
+    }
+  ]
+}

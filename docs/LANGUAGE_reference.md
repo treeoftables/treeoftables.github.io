@@ -189,13 +189,21 @@ Current standard definitions:
 
 | name       | outputKey  | Status      |
 | ---------- | ---------- | ----------- |
-| `UNITS`    | `units`    | Implemented |
-| `COMMENT`  | `comments` | Reserved    |
-| `SETTINGS` | `settings` | Reserved    |
-| `DATA`     |            | Implemented |
+| `UNITS`        | `units`         | Implemented |
+| `COMMENT`      | `comments`      | Implemented |
+| `SETTINGS`     | `settings`      | Implemented for key/value JSON in the second cell |
+| `DATA`         |                 | Implemented |
+| `MODUSTESTID`  | `modusTestIds`  | Implemented (per-column strings; not an enum of Modus codes) |
 
-`UNITS`, `COMMENT`, and `SETTINGS` are excluded from `data`. `DATA` rows are
-ordinary data rows when a row-type column exists.
+`UNITS`, `COMMENT`, `SETTINGS`, and `MODUSTESTID` are excluded from `data`.
+`DATA` rows are ordinary data rows. If `rowTypeColumn` is absent, a row is
+classified when any cell equals a typed-row name (`UNITS`, `COMMENT`,
+`MODUSTESTID`, `DATA`).
+
+Section `additionalProperties` (default `false`) is **Implemented**. When
+`true`, unknown table columns and object keys are kept in `data` and the
+derived JSON Schema allows them. Use this for open analyte sets such as Modus
+soil lab results.
 
 ## `schema.xlsx`
 

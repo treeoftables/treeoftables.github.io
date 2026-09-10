@@ -150,6 +150,21 @@
       ]
     },
     {
+      "name": "modus_soil_lab_results",
+      "description": "Modus Slim-style soil lab results: event metadata plus a wide samples table with open analyte columns.",
+      "leafPath": "ag/lab-results/soil/year-index-inplace/field-name-index-inplace.schema",
+      "schemaWorkbook": "ag/lab-results/soil/year-index-inplace/field-name-index-inplace.schema/schema.xlsx",
+      "dataSchema": "ag/lab-results/soil/year-index-inplace/field-name-index-inplace.schema/schema.data.json",
+      "examples": [
+        {
+          "workbook": "ag/lab-results/soil/year-index-inplace/field-name-index-inplace.schema/example.1.xlsx",
+          "expectedJson": "ag/lab-results/soil/year-index-inplace/field-name-index-inplace.schema/example.1.json",
+          "totsPath": "ag/lab-results/soil/2026/north80.xlsx",
+          "attachments": []
+        }
+      ]
+    },
+    {
       "name": "machinery_inventory_filters",
       "description": "Machinery inventory with serial numbers and filter part numbers.",
       "leafPath": "ag/equipment/parts/filters/year-index/2026.schema",

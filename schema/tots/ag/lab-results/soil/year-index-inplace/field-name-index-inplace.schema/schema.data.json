@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://treeoftables.org/fixtures/ag/lab-results/soil/year-index-inplace/field-name-index-inplace.schema/schema.data.json",
+  "title": "modus_soil_lab_results data schema",
+  "type": "object",
+  "properties": {
+    "event": {
+      "type": "object",
+      "properties": {
+        "date": {
+          "type": "string",
+          "format": "date"
+        },
+        "event_id": {
+          "type": "string"
+        },
+        "lab_name": {
+          "type": "string"
+        },
+        "lab_id": {
+          "type": "string"
+        },
+        "lab_report_id": {
+          "type": "string"
+        },
+        "date_received": {
+          "type": "string",
+          "format": "date"
+        },
+        "date_processed": {
+          "type": "string",
+          "format": "date"
+        },
+        "grower_name": {
+          "type": "string"
+        },
+        "farm_name": {
+          "type": "string"
+        },
+        "field_name": {
+          "type": "string"
+        },
+        "field_id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "date"
+      ],
+      "additionalProperties": true
+    },
+    "samples": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sample_id": {
+            "type": "string"
+          },
+          "lab_sample_id": {
+            "type": "string"
+          },
+          "container_id": {
+            "type": "string"
+          },
+          "source_sample_id": {
+            "type": "string"
+          },
+          "grower_name": {
+            "type": "string"
+          },
+          "farm_name": {
+            "type": "string"
+          },
+          "field_name": {
+            "type": "string"
+          },
+          "depth_top": {
+            "type": "number"
+          },
+          "depth_bottom": {
+            "type": "number"
+          },
+          "depth_units": {
+            "type": "string"
+          },
+          "latitude": {
+            "type": "number"
+          },
+          "longitude": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "sample_id"
+        ],
+        "additionalProperties": true
+      }
+    }
+  },
+  "required": [
+    "event",
+    "samples"
+  ],
+  "additionalProperties": false
+}

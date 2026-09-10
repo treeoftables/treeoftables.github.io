@@ -264,5 +264,6 @@ console.log(result.exampleCount);
 - `.xlsx` is the only parsed workbook/data serialization.
 - Attachment checks validate relative path safety and existence only; image decoding and content validation are deferred.
 - Browser catalog/distributed source resolution is intentionally unsupported; pass pre-resolved catalogs or structured entries to browser code.
-- Browser zip buffer parsing is deferred; pass extracted entries or files to the browser build.
-- Serialization, high-fidelity workbook reconstruction, formula/style preservation, and editing workflows are deferred.
+- Browser zip trees are supported via `parseTots(zipFile)` / `parseTots({ buffer, filename })`. Use `isTots(file)` to classify a File, zip, or workbook without throwing.
+- `serializeTotsWorkbook` and `serializeTotsTree` write parser-compatible xlsx/zip trees (no styles or formulas).
+- High-fidelity workbook reconstruction, formula/style preservation, and editing workflows are deferred.

@@ -12,6 +12,12 @@
           "type": "string"
         }
       },
+      "modusTestIds": {
+        "type": "object",
+        "additionalProperties": {
+          "type": "string"
+        }
+      },
       "settings": {
         "type": "object",
         "additionalProperties": true
